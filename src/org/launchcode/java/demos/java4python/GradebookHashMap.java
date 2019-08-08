@@ -32,7 +32,10 @@ public class GradebookHashMap {
                 in.nextLine();
             }
 
-        } while(!newStudent.equals(""));
+        }
+        //variableName.equals("thing to compare") will compare
+        // the values rather than == which looks to see if the reference point is the same
+        while(!newStudent.equals(""));
 
         // Print class roster
         System.out.println("\nClass roster:");

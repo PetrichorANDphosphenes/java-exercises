@@ -1,5 +1,8 @@
 package org.launchcode.java.demos.java4python;
 
+import static java.lang.System.out;
+import java.util.Scanner;
+
 /**
  * Created by LaunchCode
  */
@@ -8,6 +11,11 @@ public class Temperature {
     private double fahrenheit;
 
     public double getFahrenheit() {
+        Scanner inp = new Scanner(System.in);
+        double fahrenheit = 0;
+        System.out.println("Enter a temperature");
+        fahrenheit = inp.nextDouble();
+
         return fahrenheit;
     }
 
@@ -30,8 +38,16 @@ public class Temperature {
         setFahrenheit(fahrenheit);
     }
 
+
+
     public static void main(String[] args) {
         Temperature t = new Temperature();
     }
+
+    double salt = getFahrenheit();
+
+
+
+
 
 }
